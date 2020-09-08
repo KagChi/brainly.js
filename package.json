@@ -1,0 +1,21 @@
+{
+  "name": "brainly.js",
+  "version": "1.0.0",
+  "description": "an brainly api wrapper",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/KagChi/brainly.js.git",
+  "keywords": [
+    "brainly",
+    "brainly.js",
+    "brainly scraper",
+    "brainly indonesia"
+  ],
+  "author": "KagChi#2628",
+  "license": "GNU",
+  "dependencies": {
+    "axios": "^0.19.2",
+  }
+}
