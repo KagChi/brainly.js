@@ -1,5 +1,5 @@
 {
-  "name": "brainly.js",
+  "name": "@kagchi/brainly.js",
   "version": "1.0.0",
   "description": "an brainly api wrapper",
   "main": "index.js",
