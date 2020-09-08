@@ -16,6 +16,6 @@
   "author": "KagChi#2628",
   "license": "GNU",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.19.2"
   }
 }
