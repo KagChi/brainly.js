@@ -8,4 +8,4 @@ const getData = axios.get(baseUrl + '?q=' + query).then(res => res)
   return getData;
 }
 
-module.exports = { version, author, brainlyData}
+module.exports = { version, author, searchSoal }
