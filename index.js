@@ -13,9 +13,14 @@ for (let i=0; i < data.length; i++) {
 }
 
 async function brainlyData(query){
- console.log("brainlyData() will removed soon use search() instead")
+ console.log("brainlyData() will removed soon use get() instead")
 const data = axios.get(baseUrl + '?q=' + query).then(x => x)
-  return getData;
+  return data;
 }
 
-module.exports = { version, author, search, brainlyData}
+async function get(query){
+const data = axios.get(baseUrl + '?q=' + query).then(x => x.data)
+  return data;
+}
+
+module.exports = { version, author, search, brainlyData, get}
