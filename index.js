@@ -13,7 +13,7 @@ for (let i=0; i < data.length; i++) {
 }
 
 async function brainlyData(query){
-const data = axios.get(baseUrl + '?q=' + query).then(x => x.data)
+const data = axios.get(baseUrl + '?q=' + query).then(x => x)
   return getData;
 }
 
