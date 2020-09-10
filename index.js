@@ -13,7 +13,7 @@ for (let i=0; i < data.length; i++) {
 }
 
 async function brainlyData(query){
- console.log("brainlyData() will removed soon use get() instead")
+ console.log("brainlyData() will removed ad 1.2.0, use get() instead")
 const data = axios.get(baseUrl + '?q=' + query).then(x => x)
   return data;
 }
