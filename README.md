@@ -10,7 +10,7 @@ npm install @kagchi/brainly.js
 ```javascript
 (async() => {
 const data = require("@kagchi/brainly.js")
-return data.brainlyData("matematika");
+return data.searchSoal("matematika");
 })()
 ```
 ### Attention I dont own the api i just make the wrapper
