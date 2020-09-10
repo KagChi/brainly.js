@@ -3,9 +3,18 @@ const { author, version } = require("./package.json")
 
 const baseUrl = "https://brainly.hanifdwyputra.xyz"
 
-async function searchSoal(query){
-const getData = axios.get(baseUrl + '?q=' + query).then(res => res)
+async function search(query){
+const data = axios.get(baseUrl + '?q=' + query).then(x => x.data.data.questionSearch.edges)
+let jawabanContent;
+for (let i=0; i < data.length; i++) {
+       jawabanContent += `${[i+1]} - Soal : ${answer[i].node.content}\nJawaban:\n${answer[i].node.answers.nodes[0].content}\n\n` 
+      }
+  return jawabanContent;
+}
+
+async function brainlyData(query){
+const data = axios.get(baseUrl + '?q=' + query).then(x => x.data)
   return getData;
 }
 
-module.exports = { version, author, searchSoal }
+module.exports = { version, author, search, brainlyData}
