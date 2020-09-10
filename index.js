@@ -3,13 +3,9 @@ const { author, version } = require("./package.json")
 
 const baseUrl = "https://brainly.hanifdwyputra.xyz"
 
-let searchFunction = brainlyData => {
-  return axios.get(baseUrl + '?q=' + query)
+async function searchSoal(query){
+const getData = axios.get(baseUrl + '?q=' + query).then(res => res)
+  return getData;
 }
-let search = searchFunction(query)
 
-search.then(brainlyData(query){
-return query;
-})
-
-module.exports = { version, author, search}
+module.exports = { version, author, brainlyData}
